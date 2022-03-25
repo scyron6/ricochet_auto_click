@@ -24,7 +24,7 @@
     },
     "content_scripts": [
         {
-        "matches": ["*://www.arealme.com/*"],
+        "matches": ["*://r2.ricochet.me/*"],
         "js": ["content.js"]
         }
     ]

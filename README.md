@@ -1,0 +1,1 @@
+This is a chrome extension to automatically answer a call when it comes in for salesmen who use Ricochet. It is not currently available in the Chrome Store and needs to be updated to not answer a call if the user is currently in a call.
