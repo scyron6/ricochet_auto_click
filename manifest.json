@@ -1,0 +1,31 @@
+{
+    "name": "Ricochet Auto Click",
+    "description": "Auto clicks the ricochet alert to answer a call",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["storage", "activeTab", "scripting"],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "/icons/cursor-gray-16.png",
+            "32": "/icons/cursor-gray-32.png",
+            "48": "/icons/cursor-gray-48.png",
+            "128": "/icons/cursor-gray-128.png"
+        }
+    },
+    "icons": {
+        "16": "/icons/cursor-green-16.png",
+        "32": "/icons/cursor-green-32.png",
+        "48": "/icons/cursor-green-48.png",
+        "128": "/icons/cursor-green-128.png"
+    },
+    "content_scripts": [
+        {
+        "matches": ["*://www.arealme.com/*"],
+        "js": ["content.js"]
+        }
+    ]
+}
