@@ -4,13 +4,6 @@ chrome.storage.sync.get(['on'], function (result) {
     document.addEventListener(
       'DOMNodeInserted',
       function (e) {
-        // insertedNodes = [];
-        // insertedNodes.push(e.target);
-        // const time = new Date().toLocaleString();
-        // console.log(time);
-        // console.log(insertedNodes);
-        // console.log(e.target.outerHTML)
-        // console.log("\n");
         if (
           e.target.data == 'Incoming Call' &&
           !document.querySelector('.live-call')
